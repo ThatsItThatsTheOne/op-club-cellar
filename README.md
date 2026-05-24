@@ -1,6 +1,6 @@
-# OrderPort Club Cellar
+# OP Club Cellar
 
-OrderPort Club Cellar is a sanitized public portfolio demo inspired by OP-style winery DTC club operations. It focuses on customer records, product listings, order creation, customer order history, and basic revenue tracking.
+OP Club Cellar is a sanitized public portfolio demo inspired by OP-style winery DTC club operations. It focuses on customer records, product listings, order creation, customer order history, and basic revenue tracking.
 
 ## Features
 - Customer list
