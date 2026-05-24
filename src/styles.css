@@ -1,0 +1,13 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #2f2a26; background: #f7f3ef; }
+body { margin: 0; }
+.app { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.subtitle { color: #665c55; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.panel { background: #fff; border: 1px solid #e2d8cf; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+.stack { display: grid; gap: 8px; }
+input, select, button { padding: 8px; border-radius: 6px; border: 1px solid #cabeb4; }
+button { background: #734f3a; color: #fff; border: none; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { border-bottom: 1px solid #eee2da; text-align: left; padding: 6px; }
+.errors { color: #8f1f1f; }
+.product-grid { padding-left: 18px; }
