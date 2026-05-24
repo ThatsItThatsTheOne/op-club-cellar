@@ -128,7 +128,7 @@ function App() {
 
   return (
     <main className="app">
-      <h1>OrderPort Club Cellar</h1>
+      <h1>OP Club Cellar</h1>
       <p className="subtitle">Sanitized OP-inspired demo for lightweight winery club operations.</p>
 
       <section className="panel">

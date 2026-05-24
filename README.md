@@ -1,6 +1,6 @@
-# OrderPort Club Cellar
+# OP Club Cellar
 
-OrderPort Club Cellar is a sanitized public portfolio demo inspired by OP-style winery DTC club operations. It focuses on customer records, product listings, order creation, customer order history, and basic revenue tracking.
+OP Club Cellar is a sanitized public portfolio demo inspired by OP-style winery DTC club operations. It focuses on customer records, product listings, order creation, customer order history, and basic revenue tracking.
 
 ## Features
 - Customer list
@@ -19,7 +19,7 @@ OrderPort Club Cellar is a sanitized public portfolio demo inspired by OP-style 
 
 ## Setup
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -82,5 +82,5 @@ No screenshots are currently committed. Add demo screenshots in a future update 
 
 ## Security
 - Dependency updates are managed weekly via Dependabot (`.github/dependabot.yml`).
-- CI runs `npm install` and `npm audit` checks in `.github/workflows/security.yml`.
+- CI runs `npm ci` and `npm audit` checks in `.github/workflows/security.yml`.
 - See `SECURITY.md` for disclosure and triage policy.

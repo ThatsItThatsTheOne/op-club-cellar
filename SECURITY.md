@@ -9,7 +9,7 @@ This portfolio project supports the latest commit on `main`.
 - High/Critical production vulnerabilities must be addressed before merge.
 
 ## Reproducibility
-- Use `npm install` in CI until a lockfile can be committed; switch to `npm ci` once `package-lock.json` is present for deterministic installs.
+- Use `npm ci` in CI with `package-lock.json` for deterministic installs.
 - Do not manually edit `package-lock.json`.
 
 ## Reporting a Vulnerability
