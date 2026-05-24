@@ -6,11 +6,28 @@ import './styles.css';
 
 const STORAGE_KEY = 'op-club-cellar-orders';
 
+const isValidOrder = (value: unknown): value is Order => {
+  if (typeof value !== 'object' || value === null) return false;
+
+  const record = value as Record<string, unknown>;
+  return (
+    typeof record.id === 'string' &&
+    typeof record.customerId === 'string' &&
+    typeof record.createdAt === 'string' &&
+    typeof record.total === 'number' &&
+    Array.isArray(record.items)
+  );
+};
+
 const loadOrders = (): Order[] => {
   const raw = localStorage.getItem(STORAGE_KEY);
   if (!raw) return [];
+
   try {
-    return JSON.parse(raw) as Order[];
+    const parsed: unknown = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+
+    return parsed.filter(isValidOrder);
   } catch {
     return [];
   }
