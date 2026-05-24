@@ -19,7 +19,7 @@ OP Club Cellar is a sanitized public portfolio demo inspired by OP-style winery 
 
 ## Setup
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -79,3 +79,8 @@ AI assistance was used for planning, naming/positioning, README drafting, and im
 
 ## Screenshots / Demo Notes
 No screenshots are currently committed. Add demo screenshots in a future update under a `docs/screenshots/` folder.
+
+## Security
+- Dependency updates are managed weekly via Dependabot (`.github/dependabot.yml`).
+- CI runs `npm ci` and `npm audit` checks in `.github/workflows/security.yml`.
+- See `SECURITY.md` for disclosure and triage policy.
