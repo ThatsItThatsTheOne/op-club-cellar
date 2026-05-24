@@ -82,5 +82,5 @@ No screenshots are currently committed. Add demo screenshots in a future update 
 
 ## Security
 - Dependency updates are managed weekly via Dependabot (`.github/dependabot.yml`).
-- CI runs `npm ci` and `npm audit` checks in `.github/workflows/security.yml`.
+- CI runs `npm install` and `npm audit` checks in `.github/workflows/security.yml`.
 - See `SECURITY.md` for disclosure and triage policy.

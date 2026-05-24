@@ -6,6 +6,22 @@ import './styles.css';
 
 const STORAGE_KEY = 'op-club-cellar-orders';
 
+const isValidOrderItem = (value: unknown): boolean => {
+  if (typeof value !== 'object' || value === null) return false;
+
+  const record = value as Record<string, unknown>;
+  return (
+    typeof record.productId === 'string' &&
+    typeof record.productName === 'string' &&
+    typeof record.quantity === 'number' &&
+    Number.isFinite(record.quantity) &&
+    record.quantity > 0 &&
+    typeof record.unitPrice === 'number' &&
+    Number.isFinite(record.unitPrice) &&
+    record.unitPrice >= 0
+  );
+};
+
 const isValidOrder = (value: unknown): value is Order => {
   if (typeof value !== 'object' || value === null) return false;
 
@@ -15,7 +31,10 @@ const isValidOrder = (value: unknown): value is Order => {
     typeof record.customerId === 'string' &&
     typeof record.createdAt === 'string' &&
     typeof record.total === 'number' &&
-    Array.isArray(record.items)
+    Number.isFinite(record.total) &&
+    record.total >= 0 &&
+    Array.isArray(record.items) &&
+    record.items.every((item) => isValidOrderItem(item))
   );
 };
 
